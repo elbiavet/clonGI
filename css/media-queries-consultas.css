@@ -1,0 +1,17 @@
+
+/* media queries */
+
+@media screen and (max-width: 625px){
+    
+    .tituloForm p{
+        line-height: 1.1em;
+    }
+
+    form{
+        width:90%;
+        border: none;
+        margin: 30px auto;
+        padding: 30px 10px;
+       
+    }
+}

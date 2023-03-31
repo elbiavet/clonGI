@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Graphic Institute - Consulta sobre nuestros cursos</title>
+
+    <meta name="description" content="La Escuela de Diseño del siglo XXI es un centro de formación de referencia en el diseño y el arte. Consulta sobre nuestros cursos.">
+
+    <!-- normalize -->
+    <link rel="stylesheet" href="/css/normalize.css">
+
+    <!-- Estilos -->
+    <link type="text/css" rel="stylesheet" href="/css/consultas-styles.css">  
+    <link rel="stylesheet" href="/css/media-queries-general.css">
+    <link rel="stylesheet" href="/css/media-queries-consultas.css">
+
+     <!-- Fuentes  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+     <!-- mis iconos fontawesome -->
+    <script src="https://kit.fontawesome.com/4d033b25da.js" crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
+    <!-- barra de progreso -->
+    <div id="progreso"></div>
+
+    <!-- barra de navegación -->
+    <nav>
+
+         <!-- boton de navegación -->
+        <img src="/imagenes/menu.svg" alt="" class="iconoMenu">
+        
+        <ul class="menuNav">
+            <li><a href="/home.html">HOME</a></li>
+            <li><a href="#">DISEÑO</a></li>
+            <li><a href="#">FOTOGRAFÍA</a></li>
+            <li><a href="#">ARTE</a></li>
+            <li><a href="#">DÓNDE ESTAMOS</a></li>
+            <li><a href="/consultas.html">CONSULTAS</a></li>
+        </ul>
+    </nav>
+
+    <!-- header -->
+    <header>
+        <ul>
+            <li><a href="#"><img src="/imagenes/facebook.png" alt="Visítanos en Facebook"></a></li>
+            <li><a href="#"><img src="/imagenes/twitter.png" alt="Visítanos en Twitter"></a></li>
+            <li><a href="#"><img src="/imagenes/youtube.png" alt="Visítanos en Youtube"></a></li>
+        </ul>
+        <h1>La escuela de diseño <br><span> del siglo XXI</span></h1>
+    </header>
+
+    <!-- principal -->
+    <main>
+        <div class="tituloPagina">
+            <h2>CONSULTAS</h2>
+            <div class="linea"></div>
+            <p>Si tienes cualquier duda sobre nuestros cursos puedes completar el siguiente formulario.</p>
+        </div>
+
+        <div class="tituloForm">
+            <p>Formulario de consulta sobre cursos y Máster</p>    
+            <p><small>(Los campos marcados con un<span class="asterisco"> * </span>son obligatorios) </small></p>    
+        </div>
+
+        <form action="respuestas.php" method="post">
+            <fieldset>
+                <div class="seccionFormulario">
+                    <label for="nombre"><span class="naranja">NOMBRE: </span><span class="asterisco">*</span></label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu nombre" required>
+                </div>
+    
+                <div class="seccionFormulario">
+                    <label for="email"><span class="naranja">E-MAIL: </span><span class="asterisco">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="nombre@dominio.es" required>
+                </div>
+    
+                <div class="seccionFormulario">
+                    <label for="telefono"><span class="naranja">TELÉFONO: </span><span class="asterisco">*</span></label>
+                    <input type="tel" name="telefono" id="telefono" placeholder="000 00 00 00" required>
+                </div>
+            </fieldset>
+                
+            <div class="seccionFormulario">
+                <label for="curso"><span class="naranja">CURSO EN EL QUE ESTÁS INTERESADO: </span><span class="asterisco">*</span></label>
+                <select name="curso" id="curso" required>
+                    <option value="">Elige curso:</option>
+                    <option value="maquetacion">Curso de Maquetación y diseño Web</option>
+                    <option value="javascript">Curso profesional de Javascript</option>
+                    <option value="react-angular">Curso de React y Angular</option>
+                    <option value="fullstack">Curso de desarrollador Fullstack</option>
+                </select>
+            </div>
+
+            <div class="seccionFormulario">
+                <label for="comentarios"><span class="naranja">COMENTARIOS:</span></label>
+                <textarea name="comentarios" id="comentarios" cols="30" rows="10">Escribe aquí tus comentarios</textarea>
+            </div>
+
+            <div>
+                <input type="checkbox" name="clausulas" id="clausulas" value="si" required>
+                <label for="clausulas" class="clausulas">Acepto las cláusulas de protección de datos. <a href="#" class="leerClausulas">Leer clausulas</a></label>
+            </div>
+
+            <div>
+                <input type="submit" value="Enviar formulario" class="submit">
+            </div>
+        </form>
+        
+
+        <!-- ventana modal -->
+
+        <!-- Fondo modal -->
+    	<div class="fondoModal">
+			
+			<!-- Caja modal -->
+			<div class="cajaModal">
+
+				    <!-- Contenido de la ventana modal -->
+					<div class="contenidoModal">
+
+					    <span><i class="fa-solid fa-square-xmark cerrarModal"></i></span>
+
+                        <h2>TUS DATOS ESTÁN A SALVO EN GRAPHIC DESIGNER EN CUMPLIMIENTO DEL RGPD <small>(Reglamento General de Protección de Datos)</small></h2>
+                        <p>El artículo 13 del Reglamento General de Protección de Datos, publicado en mayo de 2016 y aplicable a partir del 25 de mayo de 2018, determina la información que deberá facilitarse cuando los datos personales se obtengan del interesado.</p>
+                        <p>En base a ello se detalla en este apartado la información necesaria para que si tienes una relación contractual con nosotros o necesitas solicitar información de nuestros productos conozcas aspectos tales como la identidad del responsable que trata tus datos, la finalidad, los posibles destinatarios o los derechos que te asisten.</p> 
+                        <p>Los datos facilitados se utilizaran exclusivamente para las finalidades propias para las que el usuario haya rellenado el formulario concreto: con el fin de gestionar el envío de información que nos solicitan y proporcionarles ofertas de nuestros programas formativos de su interés. Ofrecerle programas de estudios de acuerdo con sus intereses y mejorar su experiencia de usuario con nosotros, elaboraremos un perfil de potenciales alumnos, en base a la información facilitada. </p>			
+					</div>  
+			</div> 
+		</div> 
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Imágenes del centro</a></li>
+            <li><a href="#">Premios</a></li>
+            <li><a href="#">Bolsa de empleo</a></li>
+            <li><a href="#">Datos legales</a></li>
+        </ul>
+        <p>&copy; Graphic Designer. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- scripts -->
+
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/ventana-modal.js"></script>
+    <script src="/js/barra-progreso.js"></script>
+    <script src="/js/boton.js"></script>
+</body>
+</html>

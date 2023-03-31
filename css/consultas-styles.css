@@ -1,0 +1,324 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ----------------------------barra progreso------------------------------- */
+#progreso{
+    background: #EE790F;
+    height:7px;
+    position:fixed;
+    
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+/* ------------------------nav---------------------------- */
+
+nav .iconoMenu{
+    display: none;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.41);
+    background-image: url("/imagenes/logo-graphic-institute.svg");
+    background-repeat: no-repeat;
+    background-size: 270px;
+    background-position: 2% center;
+    
+    position: fixed;
+
+    width: 100%;
+    max-height: 12vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-top: 7px solid #3e79b5;
+    border-bottom: 3px solid white;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color:hsl(29, 88%, 50%);
+}
+
+
+/* -------------------------header---------------------------- */
+
+header{
+background-image: url("/imagenes/cabecera-consultas.jpg");
+background-position: center 100%;
+background-size: cover;
+min-height: 57vh;
+
+border-bottom: 9px solid #3e79b5;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+header ul{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+header ul li{
+    list-style: none;
+    padding-right: 15px;
+}
+
+header h1{
+    background-color: #EE790F;
+    width: 350px;
+    padding: 5px 20px;
+    margin-top: 50px;
+    
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+
+    align-self: center;
+   }
+
+header h1 span{
+    font-size: 1.9em;
+}
+
+.linea{
+    border-bottom: 5px solid #EE790F;
+    width:70px;
+    
+}
+
+
+/* -------------------------main---------------------------- */
+
+main{
+    color: #5c5c5c;
+}
+
+.tituloPagina{
+    margin: 20px 0 60px 0;
+
+    color:#353535;
+    font-size: 1.9em;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloPagina h2{
+    margin-bottom: 12px;
+}
+
+.tituloPagina p{
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+
+
+/* -------------------------form---------------------------- */
+
+.tituloForm{
+    color:#4b4b4b;
+    text-align: center;
+    line-height: 5px;
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.tituloForm small{
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+
+form{
+    width:60%;
+    margin: 50px auto;
+    padding: 30px 60px;
+    
+    border: 2px solid #EE790F;
+    border-radius: 20px;
+    
+    line-height: 30px;
+}
+
+.naranja{
+    color: #EE790F;
+}
+
+.asterisco{
+    color: red;
+}
+
+.seccionFormulario{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+ fieldset{
+    border:none; 
+    padding: 0;
+    margin: 0;
+}
+
+form input, form select, textarea{
+    border: none;
+    border: 1px solid #cfcfcf;
+    color:#777777;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.clausulas{
+    color:#353535;
+}
+
+.leerClausulas{
+    text-decoration: none;
+    padding: 0 5px;
+    border-left: 1px solid #353535;
+    cursor: pointer;
+}
+
+.leerClausulas:hover{
+    color:#EE790F;
+}
+
+.submit{
+    width: 100%;
+    margin-top: 40px;
+
+    background-color: #353535;
+    border-radius: 8px;
+
+    font-size: 1.2em;
+    color: #cacaca;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: #EE790F;
+    color: white;
+}
+
+
+/* -------------------------ventana modal---------------------------- */
+
+.cerrarModal{
+    float: right;
+    font-size: 1.8em;
+    cursor: pointer;
+}
+
+.fondoModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.80);
+    display: none;  	
+}
+
+.cajaModal{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoModal {
+    display: none;  	
+    flex-basis: 50%;
+    
+    padding: 50px;
+
+    border-radius: 15px;				 			 
+    background: #FFF;
+
+    line-height: 1.7em;
+}
+
+.contenidoModal h2{
+    width: 70%;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.contenidoModal p{
+    text-align: justify;
+}
+
+
+
+/* -------------------------footer---------------------------- */
+
+footer{
+    background-color: #1c1c1c;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #d4d2d3;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 0 10px;
+    border-right: 1px solid #919191;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #d4d2d3;
+}
+
+footer ul li a:hover{
+    color:#EE790F;
+}
+
+
+footer p{
+    color:#919191;
+}

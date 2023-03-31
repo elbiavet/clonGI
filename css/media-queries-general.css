@@ -1,0 +1,92 @@
+
+/* media queries */
+
+@media screen and (max-width: 985px){
+
+    /* header y menú navegación */
+
+    header h1{
+        background-color: hsla(29, 88%, 50%, 0.70);
+    }
+
+    nav{
+        min-height: 11vh;
+    }
+
+    nav .iconoMenu{
+        display: block;
+        float:right;
+        cursor: pointer;
+        font-size:2em;
+        color: white;
+        margin-right: 60px;
+    }
+    
+    .menuNav{
+        display:none;
+    }
+
+    .mostrarMenu{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        position:fixed;
+        top:50px;
+
+        background-color: #EE790F;
+    }
+
+    .menuNav li:hover{
+        width: 100vw;
+        background-color: hsl(29, 88%, 70%);
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 625px){
+    
+    /* header y menú navegación */
+
+    nav{
+        background-size: 20em;
+        background-position: 25% center;
+    }
+
+    nav img{
+        width: 5%;
+    }
+
+    header{
+        min-height: 48vh;
+        background-position: 10% 60%;
+        border-bottom: 11px solid #3e79b5;
+    }
+
+    header ul{
+        align-self: center;
+        margin-top: 80px;
+    }
+
+    header ul img{
+        width: 4em;
+    }
+
+    header h1{
+        margin-top: 20px;
+    }
+
+
+    /* titulo Pagina */
+
+    .tituloPagina{
+        margin: auto 25px;
+    }
+
+    .tituloPagina p{
+        font-size: 0.85em;
+    }
+}
+

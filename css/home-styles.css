@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* ----------------------------barra progreso------------------------------- */
+#progreso{
+    background: #EE790F;
+    height:7px;
+    position:fixed;
+    
+    top:0;
+    left:0;
+    z-index: 1;
+}
+
+
+/* ------------------------nav---------------------------- */
+
+nav .iconoMenu{
+    display: none; 
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.41);
+    background-image: url("/imagenes/logo-graphic-institute.svg");
+    background-repeat: no-repeat;
+    background-size: 270px;
+    background-position: 2% center;
+    
+    position: fixed;
+
+    width: 100%;
+    max-height: 12vh;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    border-top: 7px solid #3e79b5;
+    border-bottom: 3px solid white;
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: none;
+    color:hsl(29, 88%, 50%);
+}
+
+/* -------------------------header----------------------------- */
+
+header{
+    background-image: url("/imagenes/cabecera-home.jpg");
+    background-position: center 60%;
+    background-size: cover;
+    min-height: 57vh;
+
+    border-bottom: 9px solid #3e79b5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header ul{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+header ul li{
+    list-style: none;
+    padding-right: 15px;
+    
+}
+
+header h1{
+    background-color: #EE790F;
+    width: 350px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    
+
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+
+    align-self: center;
+   }
+
+header h1 span{
+    font-size: 1.9em;
+}
+
+.linea{
+    border-bottom: 5px solid #EE790F;
+    width:70px;
+    
+}
+
+
+/* ---------------------------- main ------------------------------------ */
+
+main{
+    color: #5c5c5c;
+}
+
+.tituloPagina{
+    margin: 20px 70px 30px 70px;
+
+    color:#353535;
+    font-size: 1.9em;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloPagina h2{
+    margin-bottom: 12px;
+}
+
+.tituloPagina p{
+    font-size: 0.65em;
+    font-weight: 300;
+    color:hsl(0, 0%, 50%);
+}
+
+.tituloPagina span{
+    font-weight: 400;
+    color:#353535;
+}
+
+
+/* ------------------------flex------------------------------ */
+
+.flexPadre{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexHijo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.flexHijo h3{
+    color:#353535;
+    font-weight: 400;
+    font-size: 3em;
+    margin:0;
+}
+
+.flexHijo p{
+    font-size: 1.4em;
+    line-height: 1.5em;
+    font-weight: 300;
+    color:hsl(0, 0%, 50%);
+}
+
+.hijoD{
+    padding-left:30px;
+    padding-right: 100px;
+    text-align: left;
+    flex-basis:50%;
+}
+
+.hijoI{
+    padding-right: 30px;
+    padding-left: 100px;
+    text-align: right;
+    flex-basis:50%;
+}
+
+.flexHijo .bold{
+    margin: 0 auto 10px auto;
+    font-size: 1.6em;
+    font-weight: bold;
+    line-height: 1em;
+    color:#EE790F;
+}
+
+
+.info{
+    margin-bottom:50px;
+    padding: 10px;
+    border: 2px solid #EE790F;
+    font-size: 1.1em;
+    color: #EE790F;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.info:hover{
+    background-color: #EE790F;
+    color: white;
+}
+
+.aulas{
+    background-image: url("/imagenes/aulas-3-0.jpg");
+}
+
+.laboratorio{
+    background-image: url("/imagenes/laboratorio-ideas.jpg");
+}
+
+.practicas{
+    background-image: url("/imagenes/practicas.jpg");
+}
+
+.metodologia{
+    background-image: url("/imagenes/metodologia.jpg");
+}
+
+.aulas, .laboratorio, .practicas, .metodologia{
+    flex-basis:50%;
+    min-height: 60vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+/* ----------------------------footer------------------------------- */
+
+footer{
+    background-color: #1c1c1c;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid #d4d2d3;
+}
+
+footer ul{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+footer ul li{
+    list-style: none;
+    padding: 0 10px;
+    border-right: 1px solid #919191;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #d4d2d3;
+}
+
+footer ul li a:hover{
+    color:#EE790F;
+}
+
+footer p{
+    color:#919191;
+}
+
+
+
+
+            
+    
+    
+
+
